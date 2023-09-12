@@ -12,7 +12,7 @@ export default function Product({ product }: Props) {
       href={`/product/${product.id}`}
       className="h-96 flex flex-col p-5 rounded boarder froup hover:scale-105 transition-transform ease-out duration-200"
     >
-      <div>
+      <div className="relative max-h-72 flex-1">
         <ProductImage product={product} fill />
       </div>
       <div className="font-semibold flex items-center justify-between mt-4 mb-1">
