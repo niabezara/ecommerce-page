@@ -15,6 +15,7 @@ export default function ProductImage({ product, fill }: Props) {
           src={product.image}
           alt={product.title}
           fill
+          sizes="(max-width: 640px) 100vw, 100vw"
           className={`object-contain duration-700 ease-in-out group-hover:opacity-75 ${
             loading
               ? "scale-110 blur-2xl grayscale"
@@ -28,6 +29,7 @@ export default function ProductImage({ product, fill }: Props) {
           alt={product.title}
           width={400}
           height={1000}
+          sizes="(max-width: 640px) 100vw, 100vw"
           className={`object-contain duration-700 ease-in-out group-hover:opacity-75 ${
             loading
               ? "scale-110 blur-2xl grayscale"
